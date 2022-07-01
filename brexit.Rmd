@@ -1,6 +1,6 @@
 ---
 title: "Brexit"
-author: "Mine Çetinkaya-Rundel"
+author: "Naomi Ekas"
 output: github_document
 ---
 
@@ -22,7 +22,7 @@ The data from the survey is in `data/brexit.csv`.
 brexit <- read_csv("data/brexit.csv")
 ```
 
-In the course video we made the following visualisation.
+In class we made the following visualization.
 
 ```{r}
 brexit <- brexit %>%
@@ -54,8 +54,8 @@ In this application exercise we tell different stories with the same data.
 ### Exercise 1 - Free scales
 
 Add `scales = "free_x"` as an argument to the `facet_wrap()` function.
-How does the visualisation change?
-How is the story this visualisation telling different than the story the original plot tells?
+How does the visualization change?
+How is the story this visualization telling different than the story the original plot tells?
 
 ```{r}
 ggplot(brexit, aes(y = opinion, fill = opinion)) +
@@ -91,8 +91,8 @@ How is the story this visualisation telling different than the story the origina
 
 ### Exercise 3 - Comparing proportions across bars
 
-Recreate the same visualisation from the previous exercise, this time dodging the bars for opinion proportions for each region, rather than faceting by region and then improve the legend.
-How is the story this visualisation telling different than the story the previous plot tells?
+Recreate the same visualization from the previous exercise, this time dodging the bars for opinion proportions for each region, rather than faceting by region and then improve the legend.
+How is the story this visualization telling different than the story the previous plot tells?
 
 ```{r}
 # code goes here

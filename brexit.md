@@ -1,6 +1,6 @@
 Brexit
 ================
-Mine Çetinkaya-Rundel
+Naomi Ekas
 
 In September 2019, YouGov survey asked 1,639 GB adults the following
 question:
@@ -12,13 +12,13 @@ question:
 > -   Wrong to leave  
 > -   Don’t know
 
-The data from the survey are in `data/brexit.csv`.
+The data from the survey is in `data/brexit.csv`.
 
 ``` r
 brexit <- read_csv("data/brexit.csv")
 ```
 
-In the course video we made the following visualisation.
+In class we made the following visualization.
 
 ``` r
 brexit <- brexit %>%
@@ -45,6 +45,9 @@ ggplot(brexit, aes(y = opinion, fill = opinion)) +
   theme_minimal()
 ```
 
+    ## Warning: `guides(<scale> = FALSE)` is deprecated. Please use `guides(<scale> =
+    ## "none")` instead.
+
 ![](brexit_files/figure-gfm/unnamed-chunk-2-1.png)<!-- -->
 
 In this application exercise we tell different stories with the same
@@ -53,7 +56,7 @@ data.
 ### Exercise 1 - Free scales
 
 Add `scales = "free_x"` as an argument to the `facet_wrap()` function.
-How does the visualisation change? How is the story this visualisation
+How does the visualization change? How is the story this visualization
 telling different than the story the original plot tells?
 
 ``` r
@@ -78,6 +81,9 @@ ggplot(brexit, aes(y = opinion, fill = opinion)) +
   theme_minimal()
 ```
 
+    ## Warning: `guides(<scale> = FALSE)` is deprecated. Please use `guides(<scale> =
+    ## "none")` instead.
+
 ![](brexit_files/figure-gfm/unnamed-chunk-3-1.png)<!-- -->
 
 ### Exercise 2 - Comparing proportions across facets
@@ -95,10 +101,10 @@ which means you’ll need to load it on top of the document as well.
 
 ### Exercise 3 - Comparing proportions across bars
 
-Recreate the same visualisation from the previous exercise, this time
+Recreate the same visualization from the previous exercise, this time
 dodging the bars for opinion proportions for each region, rather than
 faceting by region and then improve the legend. How is the story this
-visualisation telling different than the story the previous plot tells?
+visualization telling different than the story the previous plot tells?
 
 ``` r
 # code goes here
